@@ -1,5 +1,5 @@
 <div align="center">
-    <a href="https://github.com/github_username/repo_name">
+    <a href="https://github.com/voidpath/voidpath">
         <img src="assets/logo/logo-color.svg" alt="Logo" width="100" height="100"><br>
         <span><i>Official Repository</i></span>
     </a>
