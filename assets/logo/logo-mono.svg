@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 786.32">
+    <defs>
+        <linearGradient id="linear-gradient" x1="633" y1="425.74" x2="988.05" y2="-58.48" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#555"/>
+            <stop offset="1" stop-color="#ccc"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1="844.55" y1="550.81" x2="-55.8" y2="205.8" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#bbb"/>
+            <stop offset="0.54" stop-color="#818181"/>
+            <stop offset="0.99" stop-color="#555"/>
+        </linearGradient>
+    </defs>
+    <g class="icon_svg_mono">
+        <path class="right-stroke" fill="url(#linear-gradient)" d="M532,220.4,621.47,85.57a216.5,216.5,0,0,1,37.94-43.65C689.21,16,723.56.46,764.76.71H964a159.27,159.27,0,0,1,45.42,6.4c29.11,8.68,53.51,25.46,65.07,64.34,11.47,38.6,4.66,80.33-17.54,113.91L916.25,395.77C733.36,527.13,639.56,377.91,532,220.4Z"/>
+        <path class="left_stroke" fill="url(#linear-gradient-2)" d="M28.69,43c23.74-27.54,58.59-43,95-43H348.82c168.75-.31,258.9,590.18,604.1,340.94L759.7,638.84a373.23,373.23,0,0,1-90.55,97c-98.84,73.25-195.68,68.5-290.25-25.14a370,370,0,0,1-47.17-57.42L32.76,206.4A224.83,224.83,0,0,1,13.7,172.06C-14.08,109.12,5.24,70.19,28.69,43Z"/>
+    </g>
+</svg>
