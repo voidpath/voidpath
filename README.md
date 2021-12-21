@@ -9,4 +9,6 @@
 <hr>
 
 # Welcome to Voidpath!
-Public container for voidpath.com's source code
+Public container for voidpath.com's source code.
+
+> This project is currently in development!
