@@ -1,1 +1,27 @@
-<p>mobile-nav works!</p>
+<nav class="mobile">
+    <button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+        true}">
+        <i class="material-icons-round">home</i>
+        <div class="icon-title">
+            <span>Home</span>
+        </div>
+    </button>
+    <button routerLink="/search" routerLinkActive="active">
+        <i class="material-icons-round">search</i>
+        <div class="icon-title">
+            <span>Search</span>
+        </div>
+    </button>
+    <button routerLink="/launch" routerLinkActive="active">
+        <i class="material-icons-round">rocket_launch</i>
+        <div class="icon-title">
+            <span>Toolkit</span>
+        </div>
+    </button>
+    <button routerLink="/account" routerLinkActive="active">
+        <i class="material-icons-round">person</i>
+        <div class="icon-title">
+            <span>Profile</span>
+        </div>
+    </button>
+</nav>

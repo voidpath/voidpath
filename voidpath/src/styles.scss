@@ -5,3 +5,57 @@
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
 }
+
+:root {
+
+    --primary-color: #886af5;
+
+    --1dp: #23262B;
+    --2dp: #27292E;
+    --3dp: #2A2C31;
+    --4dp: #2F3136;
+    --5dp: #323439;
+    --6dp: #45464B;
+
+    --font-color: #fafeff;
+
+    // panels
+    --app-header-height: 65px;
+    --app-mobile-nav-height: 65px;
+
+    --app-panel-separator: 1px solid #9991;
+
+
+    --app-button-font-color: var(--font-color);
+    --app-button-border: 0.8px solid #8881;
+}
+
+body {
+    padding: 0; margin: 0;
+    
+    background-color: var(--1dp);
+    color: var(--font-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+input,
+textarea,
+button {
+    padding: 0; margin: 0;
+    border: none; outline: none;
+    background: none;
+
+    color: var(--font-color);
+
+    -webkit-tap-highlight-color: transparent;
+}

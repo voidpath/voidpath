@@ -1,0 +1,50 @@
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0; right: 0;
+
+    height: var(--app-mobile-nav-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 8px;
+
+    background-color: var(--3dp);
+    border-top: var(--app-panel-separator);
+
+
+    button {
+        position: relative;
+        height: 100%;
+        flex: 1;
+        color: var(--font-color);
+        margin-top: -2px;
+        border-top: 1px solid transparent;
+
+        transition: 
+            background-color 200ms ease, 
+            border-color 200ms ease,
+            color 200ms ease
+        ;
+
+        .icon-title {
+            margin-top: 0.15em;
+            font-size: 0.6rem;
+            color: #fff4;
+            transition: color 200ms ease;
+        }
+
+        i { font-size: 24px; }
+
+        &:active { 
+            background-color: var(--4dp)
+        }
+
+        &.active {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            .icon-title { color: var(--primary-color); }            
+        }
+    }
+
+}
