@@ -12,3 +12,7 @@
 Public container for voidpath.com's source code.
 
 > This project is currently in development!
+
+<hr>
+
+This branch is for the development of the mobile ui.
