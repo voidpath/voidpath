@@ -6,6 +6,8 @@ import { AccountComponent } from './components/pages/account/account.component';
 import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
 import { Error404Component } from './components/pages/error404/error404.component';
 import { HomeComponent } from './components/pages/home/home.component';
+import { LoginComponent } from './components/pages/login/login.component';
+import { RegisterComponent } from './components/pages/register/register.component';
 
 const routes: Routes = [
 
@@ -13,7 +15,12 @@ const routes: Routes = [
     children: [
       { path: '', component: HomeComponent },
       { path: 'dashboard', component: DashboardComponent },
-      { path: 'account', component: AccountComponent },
+      { path: 'account', component: AccountComponent,
+        children: [
+          { path: 'login', component: LoginComponent },
+          { path: 'register', component: RegisterComponent },
+        ]
+      },
       
       { path: '**', component: Error404Component },
     ]

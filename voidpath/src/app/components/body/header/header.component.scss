@@ -3,6 +3,7 @@ header {
     position: fixed;
     top: 0;
     left: 0; right: 0;
+    z-index: 22;
 
     height: var(--app-header-height);
     background-color: var(--3dp);
@@ -66,5 +67,16 @@ header {
         text-transform: uppercase;
         user-select: none;
         color: var(--primary-color);
+
+        // padding: 0 5px;
+        // outline: 1px solid transparent;
+        // border-radius: 0.5rem;
+        // transition: outline-offset 200ms ease, outline-color 200ms ease;
+
+        // &:active {
+        //     outline-offset: 3px;
+        //     outline-color: #fff2;
+        // }
+
     }
 }
