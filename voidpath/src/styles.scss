@@ -83,6 +83,7 @@ button {
 
     position: relative;
     height: 56px;
+    min-height: 56px;
     background-color: var(--field-background-color);
     border-bottom: 3px solid var(--field-feature-color);
     // border-radius: 2px;

@@ -14,6 +14,9 @@ nav {
     background-color: var(--3dp);
     border-top: var(--app-panel-separator);
 
+    @media screen and (max-height: 450px) {
+        bottom: -70px;
+    }
 
     button {
         position: relative;

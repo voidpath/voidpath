@@ -11,21 +11,24 @@
     left: 0; right: 0;
     overflow-y: auto;
 
+    transition: top 200ms ease, bottom 200ms ease;
+    @media screen and (max-height: 450px) {
+        top: 0;
+        bottom: 0;
+    }
+
     &::-webkit-scrollbar {
         width: 15px;
     }
-    
     &::-webkit-scrollbar-track {
         background-color: transparent;
     }
-
     &::-webkit-scrollbar-thumb {
         border: 5px solid transparent;
         background-clip: padding-box;
         border-radius: 10px;
         background-color: var(--5dp);
     }
-
     &::-webkit-scrollbar-thumb:hover {
         background-color: var(--6dp);
     }

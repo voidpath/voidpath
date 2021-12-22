@@ -8,6 +8,10 @@ header {
     height: var(--app-header-height);
     background-color: var(--3dp);
     border-bottom: var(--app-panel-separator);
+
+    @media screen and (max-height: 450px) {
+        top: -70px;
+    }
 }
 
 .custom-page-header {
