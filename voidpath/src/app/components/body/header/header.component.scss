@@ -22,6 +22,7 @@ header {
         $btn-size: 40px;
         width: $btn-size;
         height: $btn-size;
+        position: relative;
 
         background-color: var(--4dp);
         color: var(--app-button-font-color);
@@ -34,6 +35,66 @@ header {
 
         i {
             font-size: 22px;
+        }
+
+        &:focus .dropdown-menu{
+            transform: scale(1);
+            opacity: 1;
+            animation: none;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+
+            background-color: var(--5dp);
+            border: var(--app-panel-separator);
+            border-radius: 4px;
+            padding: 4px 0;
+            min-width: 120px;
+
+            transform: scale(0.75);
+            transform-origin: top right;
+            opacity: 0;
+            animation: hide 0s forwards;
+            animation-delay: 220ms;
+            transition:
+                opacity 100ms ease,
+                transform 200ms ease
+            ;
+
+            @keyframes hide {
+                to {
+                    display: none;
+                }
+            }
+
+            .dropdown-item {
+                display: flex;
+                align-items: center;
+                white-space: nowrap;
+
+                height: 40px;
+                padding: 0 16px 0 16px;
+                font-size: 0.9rem;
+
+                transition: background-color 200ms ease;
+
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 22px;
+                    height: 22px;
+                    margin-left: 16px;
+                    i { font-size: 22px; }
+                }
+
+                &:active {
+                    background-color: var(--6dp);
+                }
+            }
         }
     }
 }
@@ -53,7 +114,7 @@ header {
 }
 
 .app-account {
-    display: flex; //flex
+    display: none; //flex
     align-items: center;
     justify-content: space-between;
     padding: 0 16px;
@@ -96,5 +157,20 @@ header {
         //     outline-color: #fff2;
         // }
 
+    }
+}
+
+.app-title {
+    display: flex; //flex
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+
+    .page-title {
+        padding-top: 2px;
+        font-size: 1.1rem;
+        font-weight: 400;
+        user-select: none;
+        text-transform: capitalize;
     }
 }

@@ -1,5 +1,9 @@
 <header>
 
+    <div class="custom-page-header app-title">
+        <span class="page-title">{{ getPageTitle() }}</span>
+    </div>
+
     <div class="custom-page-header app-homepage">
         <span class="title">Voidpath</span>
         <a routerLink="/">
@@ -12,7 +16,17 @@
 
         </div>
         <div class="align-right">
-            <button><i class="material-icons-round">more_vert</i></button>
+            <button>
+                <i class="material-icons-round">more_vert</i>
+                <div class="dropdown-menu">
+                    <div class="dropdown-item">
+                        GitHub
+                    </div>
+                    <div class="dropdown-item">
+                        Report
+                    </div>
+                </div>
+            </button>
         </div>
     </div>
 

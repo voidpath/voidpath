@@ -13,6 +13,8 @@ import { AccountComponent } from './components/pages/account/account.component';
 import { LoginComponent } from './components/pages/login/login.component';
 import { RegisterComponent } from './components/pages/register/register.component';
 import { Error404Component } from './components/pages/error404/error404.component';
+import { ToolkitComponent } from './components/pages/toolkit/toolkit.component';
+import { SearchComponent } from './components/pages/search/search.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { Error404Component } from './components/pages/error404/error404.componen
     AccountComponent,
     LoginComponent,
     RegisterComponent,
-    Error404Component
+    Error404Component,
+    ToolkitComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
