@@ -48,8 +48,22 @@ header {
     }
 }
 
+.app-account {
+    display: flex; //flex
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+
+    .align-right {
+        // buttons on right side of header
+        display: flex;
+        gap: 8px;
+
+    }
+}
+
 .app-homepage {
-    display: flex;
+    display: none; //flex
     align-items: center;
     justify-content: center;
     padding: 0 16px;
