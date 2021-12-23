@@ -101,15 +101,6 @@ main {
                 }
             }
 
-            &:focus-within {
-                .dropdown-main {
-                    .icon { display: none; }
-                }
-                .dropdown-content {
-                    display: flex;
-                }
-            }
-
         }
     }
 }
