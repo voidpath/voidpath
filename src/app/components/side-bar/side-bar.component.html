@@ -1,0 +1,23 @@
+<div class="
+    fixed top-1 bottom-0 left-0 cursor-pointer outline-none
+    w-16 flex flex-col items-center
+    bg-w03
+    dark:bg-g01
+    border-r
+    border-d01-w
+    dark:border-d01
+">
+    <div *ngFor="let icon of icons" class="
+        w-full h-16 box-content flex flex-col items-center justify-center
+        border-transparent
+        transition-colors ease-in-out
+    "
+    [routerLink]="icon.url"
+    [routerLinkActiveOptions]="{exact:true}"
+    routerLinkActive="side-bar-icon-active">
+
+        <div class="material-icons-round text-2xl">
+            {{ icon.iconRef }}
+        </div>
+    </div>
+</div>
