@@ -1,14 +1,21 @@
 <div class="
-    fixed top-1 bottom-0 left-0 cursor-pointer outline-none
-    w-16 flex flex-col items-center
+    fixed bottom-0 left-0 right-0 cursor-pointer
+    w-full h-16 flex
     bg-w03
     dark:bg-g01
-    border-r
+    border-t
     border-d01-w
     dark:border-d01
 ">
-    <div *ngFor="let icon of icons" class="
-        w-full h-16 box-content flex flex-col items-center justify-center
+
+    <div>
+        <i class="material-icons-round fixed bottom-16 right-0 w-10 h-10 flex items-center justify-center dark:bg-g01 rounded-tl-xl opacity-60">expand_more</i>
+    </div>
+
+
+
+    <!-- <div *ngFor="let icon of icons" class="
+        w-full h-full box-content flex flex-col items-center justify-center
         border-transparent
         transition-colors ease-in-out
     "
@@ -16,8 +23,54 @@
     [routerLinkActiveOptions]="{exact:true}"
     routerLinkActive="nav-bar-icon-active">
 
-        <div class="material-icons-round text-2xl">
+        <i class="material-icons-round text-xl">
             {{ icon.iconRef }}
-        </div>
+        </i>
+
+        <span class="text-[10px] opacity-30">
+            {{ icon.title }}
+        </span>
+
+    </div> -->
+    
+
+    <div class="
+        w-full h-full box-content flex flex-col items-center justify-center
+        border-transparent
+        transition-colors ease-in-out
+    "
+    routerLink="/"
+    [routerLinkActiveOptions]="{exact:true}"
+    routerLinkActive="nav-bar-icon-active">
+
+        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1003.88 1003.98"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:140px;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_4" data-name="Layer 4"><path class="cls-1" d="M910.49,447.07,558,93.32a79.12,79.12,0,0,0-112.18,0L93.39,447.07C43.42,497.23,78.81,583,149.48,583h43.11V799c0,74.56,60.22,135,134.5,135h349.7c74.29,0,134.5-60.44,134.5-135V583H854.4C925.07,583,960.46,497.23,910.49,447.07Z"/></g></g></svg>
+
     </div>
+    <div class="
+        w-full h-full box-content flex flex-col items-center justify-center
+        border-transparent
+        transition-colors ease-in-out
+    "
+    routerLink="/"
+    [routerLinkActiveOptions]="{exact:true}"
+    routerLinkActive="nav-bar-icon-active">
+
+        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024.5 1024.5"><defs><style>.cls-1,.cls-2{fill:#fff;}.cls-2{stroke:#fff;stroke-miterlimit:10;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_5" data-name="Layer 5"><path class="cls-1" d="M400,160a240,240,0,1,1-169.71,70.29A238.43,238.43,0,0,1,400,160M400,0h0C179.09,0,0,179.09,0,400H0C0,620.91,179.09,800,400,800h0c220.91,0,400-179.09,400-400h0C800,179.09,620.91,0,400,0Z"/><path class="cls-2" d="M1024,933.41v.18A90.41,90.41,0,0,1,933.59,1024h0a90.42,90.42,0,0,1-63.92-26.47L704.81,832.09l-97-128,96-96,129,96L997.52,869.48A90.42,90.42,0,0,1,1024,933.41Z"/></g></g></svg>
+    </div>
+    <div class="
+        w-full h-full box-content flex flex-col items-center justify-center
+        border-transparent
+        transition-colors ease-in-out
+    "
+    routerLink="/apps"
+    [routerLinkActiveOptions]="{exact:true}"
+    routerLinkActive="nav-bar-icon-active">
+
+    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:128px;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_6" data-name="Layer 6"><rect class="cls-1" x="64" y="608" width="352" height="352" rx="96"/><rect class="cls-1" x="608" y="608" width="352" height="352" rx="96"/><rect class="cls-1" x="64" y="64" width="352" height="352" rx="96"/><rect class="cls-1" x="608" y="64" width="352" height="352" rx="96"/></g></g></svg>
+
+    </div>
+
+
+
+
 </div>

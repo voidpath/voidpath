@@ -15,7 +15,19 @@ export class NavBarComponent implements OnInit {
       url: '/',
     },
     {
-      title: 'Account',
+      title: 'Apps',
+      tooltip: 'Browse app library',
+      iconRef: 'dashboard',
+      url: '/apps',
+    },
+    {
+      title: 'Search',
+      tooltip: 'Search through everything',
+      iconRef: 'search',
+      url: '/browse',
+    },
+    {
+      title: 'Profile',
       tooltip: 'Manage your account',
       iconRef: 'person',
       url: '/account',
