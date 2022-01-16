@@ -46,7 +46,7 @@ module.exports = {
                 'pr-main': '#5367cf',
                 'pr-text': '#7485df',
 
-                'pr-body-op-min': '#5367cf15',
+                'pr-body-op-min': '#5367cf10',
             }
         },
     },

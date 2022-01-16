@@ -1,6 +1,6 @@
 <div class="
     fixed bottom-0 left-0 right-0 cursor-pointer
-    w-full h-16 flex
+    w-full h-16 flex z-20
     bg-w03
     dark:bg-g01
     border-t
@@ -15,9 +15,9 @@
 
 
     <div *ngFor="let icon of icons" class="
-        w-full h-full box-content flex flex-col items-center justify-center
-        border-transparent
-        transition-colors ease-in-out
+        w-full h-full flex flex-col items-center justify-center
+        border-t border-transparent mt-[-1px]
+        transition-colors ease-in-out duration-100
     "
     [routerLink]="icon.url"
     [routerLinkActiveOptions]="{exact:true}"
@@ -27,7 +27,7 @@
             {{ icon.iconRef }}
         </i>
 
-        <span class="text-[10px] opacity-30">
+        <span class="text-[10px] opacity-60 dark:opacity-40">
             {{ icon.title }}
         </span>
 

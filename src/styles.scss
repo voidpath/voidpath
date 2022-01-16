@@ -13,5 +13,5 @@ body {
 }
 
 .nav-bar-icon-active {
-    @apply border-t border-pr-main bg-pr-body-op-min text-pr-text;
+    @apply border-t border-pr-main bg-pr-body-op-min font-medium text-pr-main dark:text-pr-text;
 }
