@@ -12,7 +12,11 @@ body {
     @apply bg-w00 dark:bg-g00;
 }
 
+body.transition-all, body.transition-all * {
+    transition: all 200ms ease, color 50ms ease;
+}
+
 .nav-bar-icon-active {
     // @apply border-t border-pr-main bg-pr-body-op-min font-medium text-pr-main dark:text-pr-text;
-    @apply bg-pr-body-op-min font-semibold text-pr-main dark:text-pr-text;
+    @apply opacity-100 bg-pr-body-op-min font-semibold text-pr-main dark:text-pr-text;
 }
