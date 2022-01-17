@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { AccountComponent } from './pages/account/account.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { AppsComponent } from './pages/apps/apps.component';
@@ -14,7 +14,7 @@ import { BrowseComponent } from './pages/browse/browse.component';
   declarations: [
     AppComponent,
     NavBarComponent,
-    AccountComponent,
+    ProfileComponent,
     HomeComponent,
     SettingsComponent,
     AppsComponent,

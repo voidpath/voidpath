@@ -36,7 +36,7 @@ export class NavBarComponent implements OnInit {
       title: 'Profile',
       tooltip: 'Manage your account',
       iconRef: 'person',
-      url: '/account',
+      url: '/profile',
     },
   ];
 
