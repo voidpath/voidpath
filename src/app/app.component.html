@@ -8,9 +8,15 @@
 	dark:bg-g00
 	dark:text-white
 ">
-	<div class="fixed top-0 left-0 right-0 w-full h-1 bg-pr-main"></div>
-    <app-nav-bar></app-nav-bar>
-	<div class="fixed top-1 bottom-20 left-0 right-0 p-2 overflow-auto">
+
+	<div class="fixed top-1 bottom-20 left-0 right-0 p-4 pt-10 overflow-auto">
 		<router-outlet></router-outlet>
 	</div>
+
+	<div class="fixed top-0 left-0 right-0 w-full h-1 bg-pr-main"></div>
+	<div class="fixed top-1 right-2 w-10 h-6 pb-1 flex items-center justify-center bg-pr-main rounded-b-full">
+		<i class="material-icons-round text-white">expand_more</i>
+	</div>
+    <app-nav-bar></app-nav-bar>
+
 </div>
