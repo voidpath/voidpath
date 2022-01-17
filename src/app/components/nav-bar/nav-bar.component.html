@@ -1,4 +1,38 @@
 <div class="
+    fixed bottom-2 left-2 right-2 cursor-pointer
+    h-16 flex z-20 p-2
+    rounded-xl
+    bg-w03
+    dark:bg-g01
+    border
+    border-d01-w
+    dark:border-d01
+">
+
+    <div *ngFor="let icon of icons" class="
+        w-full h-full flex flex-col items-center justify-center
+        rounded-lg
+        transition-colors ease-in-out duration-100
+    "
+    [routerLink]="icon.url"
+    [routerLinkActiveOptions]="{exact:true}"
+    routerLinkActive="nav-bar-icon-active">
+
+        <i class="material-icons-round text-xl">
+            {{ icon.iconRef }}
+        </i>
+
+        <span class="text-[10px] opacity-60 dark:opacity-40">
+            {{ icon.title }}
+        </span>
+
+    </div>
+
+
+</div>
+
+
+<!-- <div class="
     fixed bottom-0 left-0 right-0 cursor-pointer
     w-full h-16 flex z-20
     bg-w03
@@ -7,12 +41,6 @@
     border-d01-w
     dark:border-d01
 ">
-
-    <!-- <div>
-        <i class="material-icons-round fixed bottom-16 right-0 w-10 h-10 flex items-center justify-center dark:bg-g01 rounded-tl-xl opacity-60">expand_more</i>
-    </div> -->
-
-
 
     <div *ngFor="let icon of icons" class="
         w-full h-full flex flex-col items-center justify-center
@@ -34,4 +62,4 @@
     </div>
 
 
-</div>
+</div> -->

@@ -22,9 +22,15 @@ export class NavBarComponent implements OnInit {
     },
     {
       title: 'Search',
-      tooltip: 'Search through everything',
+      tooltip: 'Modify app settings',
       iconRef: 'search',
-      url: '/browse',
+      url: '/settings',
+    },
+    {
+      title: 'Settings',
+      tooltip: 'Modify app settings',
+      iconRef: 'settings',
+      url: '/settings',
     },
     {
       title: 'Profile',

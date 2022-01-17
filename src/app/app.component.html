@@ -9,10 +9,7 @@
 ">
 	<div class="fixed top-0 left-0 right-0 w-full h-1 bg-pr-main"></div>
     <app-nav-bar></app-nav-bar>
-	<div class="fixed top-1 bottom-0 left-0 right-0 p-2">
-		<button (click)="setDarkMode()">eeeeeeeeeeeeeeeeeeeeeee Dark</button>
-		<button (click)="setLightMode()">eeeeeeeeeeeeeeeeeeeeeee Light</button>
-		<button (click)="setSystemMode()">eeeeeeeeeeeeeeeeeeeeeee System</button>
+	<div class="fixed top-1 bottom-20 left-0 right-0 p-2 overflow-auto">
+		<router-outlet></router-outlet>
 	</div>
 </div>
-<router-outlet></router-outlet>
