@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'user-client';
 
+  page: object = {};
+  
   ngOnInit(): void {
     if (localStorage['theme'] === 'system') {
       window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
@@ -37,4 +39,5 @@ export class AppComponent {
     localStorage['theme'] = 'light';
     document.documentElement.classList.remove('dark');
   }
+
 }
