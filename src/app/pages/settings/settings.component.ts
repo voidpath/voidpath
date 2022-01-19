@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PageService } from 'src/app/service/page.service';
 
 @Component({
   selector: 'app-settings',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettingsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private pageService: PageService) { }
 
   ngOnInit(): void {
+    this.pageService.updatePage({
+      title: 'Settings',
+      description: 'Modify the app\'s appearance and behaviour!',
+      nested: false,
+    });
   }
 
   setSystemMode() {

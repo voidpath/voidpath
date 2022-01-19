@@ -10,8 +10,8 @@
 	<div>
 		<!-- <i class="material-icons-round text-xl mr-2">arrow_back</i> -->
         <div class="flex items-center gap-2">
-            <span class="font-medium">{{ pageTitle }}</span>
-            <i class="material-icons-round text-xl">expand_more</i>
+            <span class="font-medium">{{ page.title }}</span>
+            <i *ngIf="page.nested" class="material-icons-round text-xl">expand_more</i>
         </div>
 	</div>
 	<div>

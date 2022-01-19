@@ -7,8 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'user-client';
-
-  page: object = {};
   
   ngOnInit(): void {
     if (localStorage['theme'] === 'system') {

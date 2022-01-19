@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PageService } from 'src/app/service/page.service';
 
 @Component({
   selector: 'app-browse',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BrowseComponent implements OnInit {
 
-  constructor() { }
+  constructor(private pageService: PageService) { }
 
   ngOnInit(): void {
+    this.pageService.updatePage({
+      title: 'Browse',
+      description: 'Browse through our collection of free Apps and Services!',
+      nested: false,
+    });
   }
 
 }
