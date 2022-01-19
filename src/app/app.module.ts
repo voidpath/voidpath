@@ -10,6 +10,8 @@ import { SettingsComponent } from './pages/settings/settings.component';
 import { AppsComponent } from './pages/apps/apps.component';
 import { BrowseComponent } from './pages/browse/browse.component';
 import { PageNavComponent } from './components/page-nav/page-nav.component';
+import { HostingComponent } from './pages/apps/hosting/hosting.component';
+import { Error404Component } from './pages/error404/error404.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PageNavComponent } from './components/page-nav/page-nav.component';
     SettingsComponent,
     AppsComponent,
     BrowseComponent,
-    PageNavComponent
+    PageNavComponent,
+    HostingComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,

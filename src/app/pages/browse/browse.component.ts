@@ -14,7 +14,7 @@ export class BrowseComponent implements OnInit {
     this.pageService.updatePage({
       title: 'Browse',
       description: 'Browse through our collection of free Apps and Services!',
-      nested: false,
+      children: false,
     });
   }
 

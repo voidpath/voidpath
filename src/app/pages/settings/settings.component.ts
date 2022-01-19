@@ -14,7 +14,7 @@ export class SettingsComponent implements OnInit {
     this.pageService.updatePage({
       title: 'Settings',
       description: 'Modify the app\'s appearance and behaviour!',
-      nested: false,
+      children: false,
     });
   }
 

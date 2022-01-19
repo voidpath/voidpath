@@ -14,7 +14,7 @@ export class ProfileComponent implements OnInit {
     this.pageService.updatePage({
       title: 'Profile',
       description: 'Manage your Voidpath Developer Profile!',
-      nested: false,
+      children: false,
     });
   }
 

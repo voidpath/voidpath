@@ -10,7 +10,7 @@ export class PageService {
   private page = new BehaviorSubject<any>({
     title: 'Voidpath',
     description: 'The best developer resources on the internet!',
-    nested: false,
+    children: false,
   });
   page$ = this.page.asObservable();
 
@@ -26,38 +26,38 @@ export class PageService {
     let obj = {
       title: 'Voidpath',
       description: 'The best developer resources on the internet!',
-      nested: false,
+      children: false,
     }
 
     if (pagePosition == 0) {
       obj = {
         title: 'Home',
         description: 'The best developer resources on the internet!',
-        nested: false,
+        children: false,
       }
     } else if (pagePosition == 1) {
       obj = {
         title: 'Apps',
         description: 'Get access to our free-to-use Apps and Services exclusive to Voidpath!',
-        nested: true,
+        children: true,
       }
     } else if (pagePosition == 2) {
       obj = {
         title: 'Search',
         description: 'Browse through our collection of free Apps and Services!',
-        nested: false,
+        children: false,
       }
     } else if (pagePosition == 3) {
       obj = {
         title: 'Settings',
         description: 'Modify the app\'s appearance and behaviour!',
-        nested: false,
+        children: false,
       }
     } else if (pagePosition == 4) {
       obj = {
         title: 'Profile',
         description: 'Manage your Voidpath Developer Profile!',
-        nested: false,
+        children: false,
       }
     }
 

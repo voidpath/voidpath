@@ -14,7 +14,7 @@ export class AppsComponent implements OnInit {
     this.pageService.updatePage({
       title: 'Apps',
       description: 'Get access to our free-to-use Apps and Services exclusive to Voidpath!',
-      nested: true,
+      children: true,
     });
   }
 
