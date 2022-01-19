@@ -1,6 +1,12 @@
 
 <p class="mb-2 font-medium">Theme</p>
-<button class="p-2 px-3 bg-g04 rounded-md mb-1 text-sm" (click)="setDarkMode()">Dark mode</button><br>
-<button class="p-2 px-3 bg-g04 rounded-md mb-1 text-sm" (click)="setLightMode()">Light mode</button><br>
-<button class="p-2 px-3 bg-g04 rounded-md mb-1 text-sm" (click)="setSystemMode()">System (auto)</button>
-<hr class="border-d00 my-2">
+<button class="p-3 px-4 bg-w04 dark:bg-g04 rounded-lg mb-1 text-sm" (click)="setSystemMode()">System (auto)</button><br>
+<button class="p-3 px-4 bg-w04 dark:bg-g04 rounded-lg mb-1 text-sm" (click)="setDarkMode()">Dark mode</button><br>
+<button class="p-3 px-4 bg-w04 dark:bg-g04 rounded-lg mb-1 text-sm" (click)="setLightMode()">Light mode</button>
+
+<hr class="dark:border-d00 my-4">
+
+<p class="mb-2 font-medium">Erase all Data</p>
+<button class="p-3 px-4 bg-red-600 text-white font-semibold dark:bg-red-500 rounded-lg mb-1 text-sm">Delete everything</button>
+
+<hr class="dark:border-d00 my-4">
