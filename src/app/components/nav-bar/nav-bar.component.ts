@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { PageService } from 'src/app/service/page.service';
+import { PageService } from 'src/app/services/page.service';
 
 @Component({
   selector: 'app-nav-bar',
