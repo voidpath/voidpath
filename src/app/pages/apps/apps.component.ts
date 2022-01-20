@@ -8,6 +8,21 @@ import { PageService } from 'src/app/service/page.service';
 })
 export class AppsComponent implements OnInit {
 
+  apps: any[] = [
+    {
+      title: 'Lessons',
+      url: '/apps/lessons',
+    },
+    {
+      title: 'Courses',
+      url: '/apps/courses',
+    },
+    {
+      title: 'Web Hosting',
+      url: '/apps/web-hosting',
+    },
+  ]
+
   constructor(private pageService: PageService) { }
 
   ngOnInit(): void {

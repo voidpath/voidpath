@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PageService } from 'src/app/service/page.service';
 
 @Component({
   selector: 'app-hosting',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HostingComponent implements OnInit {
 
-  constructor() { }
+  constructor(private pageService: PageService) { }
 
   ngOnInit(): void {
+    this.pageService.updatePage({
+      title: 'Web Hosting',
+      description: 'Web Hosting with Voidpath',
+      path: ['apps', 'web hosting'],
+    });
   }
 
 }

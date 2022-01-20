@@ -1,8 +1,15 @@
-<div>
-    <ul>
-        <li>App 1</li>
-        <li>App 2</li>
-        <li>App 3</li>
-        <li>Web Hosting</li>
-    </ul>
-</div>
+<main>
+    <section class="flex flex-col gap-2">
+        <div
+            *ngFor="let app of apps"
+            [routerLink]="app.url"
+            class="
+                w-full p-6
+                rounded-xl bg-g04
+                text-lg
+            "
+        >
+            {{ app.title }}
+        </div>
+    </section>
+</main>

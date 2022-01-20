@@ -16,6 +16,7 @@ const routes: Routes = [
   { path: 'settings', component: SettingsComponent },
   { path: 'profile', component: ProfileComponent },
 
+  // { path: '**', redirectTo: '/' },
   { path: '**', component: Error404Component },
 ];
 

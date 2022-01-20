@@ -9,6 +9,7 @@ import { PageService } from 'src/app/service/page.service';
 export class PageNavComponent implements OnInit {
 
   page: any;
+  pageTitle!: string;
 
   constructor(private pageService: PageService) { }
   
