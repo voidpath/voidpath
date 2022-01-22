@@ -7,6 +7,8 @@ import { AppsComponent } from './pages/apps/apps.component';
 import { BrowseComponent } from './pages/browse/browse.component';
 import { HostingComponent } from './pages/apps/hosting/hosting.component';
 import { Error404Component } from './pages/error404/error404.component';
+import { LoginComponent } from './pages/profile/login/login.component';
+import { CreateComponent } from './pages/profile/create/create.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,6 +17,8 @@ const routes: Routes = [
   { path: 'browse', component: BrowseComponent },
   { path: 'settings', component: SettingsComponent },
   { path: 'profile', component: ProfileComponent },
+    { path: 'login', component: LoginComponent },
+    { path: 'create', component: CreateComponent },
 
   // { path: '**', redirectTo: '/' },
   { path: '**', component: Error404Component },

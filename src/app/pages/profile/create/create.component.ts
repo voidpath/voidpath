@@ -3,18 +3,18 @@ import { AuthService } from 'src/app/services/auth.service';
 import { PageService } from 'src/app/services/page.service';
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.scss']
+  selector: 'app-create',
+  templateUrl: './create.component.html',
+  styleUrls: ['./create.component.scss']
 })
-export class ProfileComponent implements OnInit {
+export class CreateComponent implements OnInit {
 
   constructor(private pageService: PageService, public auth: AuthService) { }
 
   ngOnInit(): void {
     this.pageService.updatePage({
-      title: 'Profile',
-      description: 'Manage your Voidpath Developer Profile!',
+      title: 'Developer Profile',
+      description: 'Create a Voidpath Developer Profile!',
       children: false,
     });
   }

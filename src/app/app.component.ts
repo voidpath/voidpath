@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PageService } from './services/page.service';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'user-client';
+
+  authState: boolean = false;
+
+  constructor(private pageService: PageService) { }
   
   ngOnInit(): void {
     if (localStorage['theme'] === 'system') {
@@ -20,6 +25,8 @@ export class AppComponent {
         }
       });
     }
+
+    this.pageService.authState$.subscribe(obj => this.authState = obj);
   }
   setSystemMode() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {

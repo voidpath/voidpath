@@ -1,10 +1,84 @@
-<div class="w-full flex flex-col items-center">
-    <div class="mt-12 mb-6 w-40 h-40 flex items-center justify-center rounded-full bg-w04 dark:bg-g06 overflow-hidden">
-        <i class="material-icons-round text-8xl opacity-20">person</i>
-        <!-- <img class="w-full h-full" src="https://st2.depositphotos.com/1502311/12020/v/380/depositphotos_120206860-stock-illustration-profile-picture-vector.jpg?forcejpeg=true"> -->
+
+<main>
+    <div *ngIf="auth.user$ | async; then authenticated else guest">
+        <!-- template will replace this div -->
     </div>
-    <p class="text-3xl font-medium px-4 py-2 border-2 border-w08 dark:border-g04 rounded-lg flex items-center gap-5">
-        jordan_r
-        <i class="material-icons-round text-2xl">edit</i>
-    </p>
-</div>
+
+    <!-- User NOT logged in -->
+    <ng-template #guest>
+        <section>
+            No account.<br><br>
+        </section>
+        <section class="flex flex-col gap-2">
+            <app-el-button
+                routerLink="/login"
+                [useIcon]="true"
+                iconPosition="left"
+                iconName="launch"
+                value="Login"
+            ></app-el-button>
+            <app-el-button
+                routerLink="/create"
+                [useIcon]="true"
+                iconPosition="left"
+                iconName="add"
+                value="Create account"
+            ></app-el-button>
+        </section>
+    </ng-template>
+
+
+    <!-- User logged in -->
+    <ng-template #authenticated>
+        <div *ngIf="auth.user$ | async as user" class="w-full flex flex-col items-center gap-10">
+            <section class="w-full flex flex-col items-center">
+                <div class="mt-12 mb-6 w-40 h-40 flex items-center justify-center rounded-full bg-w04 dark:bg-g06 overflow-hidden">
+                    <img class="w-full h-full" [src]="user.photoURL">
+                </div>
+                <p class="text-3xl font-medium px-4 py-2 border-2 border-w08 dark:border-g04 rounded-lg flex items-center gap-5">
+                    {{ user.displayName }}
+                    <i class="material-icons-round text-2xl">edit</i>
+                </p>
+            </section>
+            <section class="w-full flex flex-col gap-2">
+                <app-el-input
+                    inputName=""
+                    inputType="text"
+                    [readonly]="true"
+                    label="UID"
+                    [value]="user.uid!"
+                ></app-el-input>
+                <app-el-input
+                    inputName=""
+                    inputType="text"
+                    [readonly]="true"
+                    label="Full name"
+                    [value]="user.fullName!"
+                ></app-el-input>
+                <app-el-input
+                    inputName=""
+                    inputType="text"
+                    [readonly]="true"
+                    label="Contact email"
+                    [value]="user.email!"
+                ></app-el-input>
+                <app-el-input
+                    inputName=""
+                    inputType="text"
+                    [readonly]="true"
+                    label="Account status"
+                    [value]="user.status!"
+                ></app-el-input>
+            </section>
+            <section>
+                <app-el-button
+                    (click)="auth.signOut()"
+                    [useIcon]="true"
+                    iconPosition="left"
+                    iconName="logout"
+                    value="Logout"
+                ></app-el-button>
+            </section>
+        </div>
+    </ng-template>
+</main>

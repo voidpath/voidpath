@@ -1,0 +1,34 @@
+<div class="
+    el-field relative text-base
+    h-14 rounded-md overflow-hidden
+    transition-colors bg-g04
+
+">
+    <input
+        [type]="inputType"
+        [name]="inputName"
+        [value]="value"
+        [readonly]="readonly"
+        placeholder=" "
+        class="
+            w-full h-full
+            py-0 pt-3 px-4
+        "
+    >
+    <label
+        [for]="inputName"
+        class="
+            absolute pointer-events-none
+            top-1/2 left-4 translate-y-[-50%]
+            opacity-40
+            transition-all ease-in-out
+        "
+    >
+        {{ label }}
+    </label>
+    <div class="
+        el-field-bottom-border
+        absolute top-full left-0 right-0 h-1 -translate-y-1
+        transition-opacity ease-in-out bg-g24
+    "></div>
+</div>

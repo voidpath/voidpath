@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "voidpath-com": {
+      "hosting": {
+        "user-client": [
+          "voidpath-client"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "voidpath-com"
+  }
+}

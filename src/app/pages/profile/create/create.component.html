@@ -1,0 +1,35 @@
+<main class="h-full w-full flex flex-col items-center justify-center">
+    <section class="flex flex-col gap-6">
+        <div>
+            <h1 class="text-2xl font-bold mb-2">One account.<br>Unlimited possibilities.</h1>
+            <p class="font-medium">
+                Sign up for free and gain instant access to all our services!
+            </p>
+        </div>
+        <div class="flex flex-col gap-2">
+            <app-el-input
+                inputName="email-00"
+                inputType="text"
+                label="Email"
+            ></app-el-input>
+            <app-el-input
+                inputName="password-00"
+                inputType="password"
+                label="Password"
+            ></app-el-input>
+            <app-el-input
+                inputName="password-01"
+                inputType="password"
+                label="Confirm Password"
+            ></app-el-input>
+        </div>
+        <div class="w-full flex flex-row-reverse gap-2">
+            <app-el-button
+                [useIcon]="true"
+                iconPosition="right"
+                iconName="arrow_forward"
+                value="Proceed"
+            ></app-el-button>
+        </div>
+    </section>
+</main>

@@ -20,3 +20,18 @@ body.transition-all, body.transition-all * {
     // @apply border-t border-pr-main bg-pr-body-op-min font-medium text-pr-main dark:text-pr-text;
     @apply opacity-100 bg-pr-body-op-min font-semibold text-pr-main dark:text-pr-text;
 }
+
+
+
+.el-field input {
+    border: none;
+    outline: none;
+    background: none;
+    margin: none;
+}
+.el-field input:not(:placeholder-shown) + label, .el-field:focus-within label {
+    @apply font-medium text-xs text-[0.6rem] top-4;
+}
+.el-field input:not(:placeholder-shown) .el-field-bottom-border, .el-field:focus-within .el-field-bottom-border {
+    // @apply opacity-0;
+}

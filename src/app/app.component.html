@@ -9,11 +9,17 @@
 	dark:text-white
 ">
 
-	<div class="fixed top-14 bottom-20 left-0 right-0 p-4 overflow-auto">
+	<div
+		[className]="!authState ? 'fixed top-0 bottom-0 left-0 right-0 p-4 overflow-auto' : 'fixed top-14 bottom-20 left-0 right-0 p-4 overflow-auto'"
+	>
 		<router-outlet></router-outlet>
 	</div>
 
-	<app-page-nav></app-page-nav>
-    <app-nav-bar></app-nav-bar>
+	<app-page-nav
+		*ngIf="authState"
+	></app-page-nav>
+    <app-nav-bar
+		*ngIf="authState"
+	></app-nav-bar>
 
 </div>

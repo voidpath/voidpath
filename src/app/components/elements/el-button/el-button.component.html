@@ -1,0 +1,11 @@
+<button class="
+    select-none
+    h-12 flex items-center gap-2
+    px-5 font-semibold
+    rounded-full
+    bg-pr-main
+">
+    <span *ngIf="iconPosition=='right'">{{ value }}</span>
+    <i *ngIf="useIcon" class="material-icons-round text-xl">{{ iconName }}</i>
+    <span *ngIf="iconPosition=='left'">{{ value }}</span>
+</button>
